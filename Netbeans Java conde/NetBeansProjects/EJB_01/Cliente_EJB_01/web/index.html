@@ -1,0 +1,80 @@
+ <%@page contentType="text/html
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>    
+        <form action="procesar.do" method="post"   >
+            <table border ="0">
+                <tr bgcolor="lightgray">    
+                    <th colspan="2  ">Registro de cocinas    </th>
+                </tr>
+                <tr>
+                <td><b>Codigo</b>        </td>
+                <td><input type="number" name="txcod" min="1" max="99999"required>   </td>
+                </tr>
+                <tr>
+                    <td><b>Marca</b>        </td>
+                <td>
+                    <select name ="cbomar">     
+                        <option value="Fensa">Fensa   </option>
+                        <option value="Mademsa">Mademsa   </option>
+                        <option value="Sindelen">Sindelen   </option>
+                    </select>    
+                </td>
+                </tr>
+                <tr>     
+                    <td><b>Descripcion</b>    </td>
+                    <td> <input type="text " name="textdes" maxlength="40"required/>     </td>
+                
+                
+                </tr>
+                <tr>     
+                    <td><b>Platillos</b>    </td>
+                    <td>
+                        <input type="radio " name="oppla" value="4" checked           /> 4
+                        <input type="radio " name="oppla" value="6" checked           /> 6
+                    </td>
+                
+                
+                </tr>
+                <tr>
+                <td><b>Precio</b>        </td>
+                <td><input type="number" name="txtpre" min="100" max="9999999"required>   </td>
+                </tr>
+                
+                <tr>
+                
+                    <th>
+                        <input type="submit" name="btnalm" value="Almacenar"> 
+                        <input type="reset" name="btnres" value="Restablecer">
+                    
+                    </th>
+                
+                
+            </table>
+            
+            
+            
+        </form>
+        <br/>
+        <table border="1px">    
+            <tr bgcolor="lightgray">    
+                <th> Listado de Cocinas</th>
+            </tr>
+            <tr>    
+                <th width="100px ">CODIGO</th>
+                <th width="100px">MARCA</th>
+                <th width="200px">DESCRIPCION</th>
+                <th width="100px">PLATILLOS</th>
+                <th width="100px">PRECIO</th>
+                <th width="100px">ELIMINAR</th>
+                
+            </tr>
+        </table>
+    </center>
+    </body>
+</html>
